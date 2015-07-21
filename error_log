@@ -1,0 +1,353 @@
+[25-Dec-2012 23:38:47 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[25-Dec-2012 23:40:18 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[25-Dec-2012 23:40:34 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[25-Dec-2012 23:42:39 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[25-Dec-2012 23:46:19 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[25-Dec-2012 23:55:40 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[25-Dec-2012 23:56:59 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[25-Dec-2012 23:58:56 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[26-Dec-2012 00:00:56 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[26-Dec-2012 00:01:17 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[26-Dec-2012 00:02:26 UTC] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[26-Dec-2012 00:03:06 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[26-Dec-2012 00:04:04 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[26-Dec-2012 00:09:23 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[26-Dec-2012 00:10:17 UTC] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/modules/kodwoo/vendor/kodwoo/classes/kohana/kodwoo/view.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/init.php on line 11
+[26-Dec-2012 00:11:00 UTC] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/modules/kodwoo/vendor/kodwoo/classes/kohana/kodwoo/view.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/init.php on line 11
+[26-Dec-2012 00:11:51 UTC] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/classes/kohana/kodwoo/view.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/init.php on line 11
+[26-Dec-2012 00:17:06 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_Internal_Template' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/internal/template.php on line 6
+[26-Dec-2012 00:19:22 UTC] PHP Fatal error:  Class 'Kohana_Kodwoo_Internal_Template' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/internal/template.php on line 6
+[16-Nov-2013 19:07:15 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/classes/Swift.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/swift_required.php:22
+Stack trace:
+#0 /home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/swift_required.php(22): Kohana_Core::error_handler(2, 'require(/home/r...', '/home/rexdraco/...', 22, Array)
+#1 /home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/swift_required.php(22): require()
+#2 /home/rexdraco/public_html/juego/modules/swiftmailer/init.php(7): require('/home/rexdraco/...')
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Core.php(602): require_once('/home/rexdraco/...')
+#4 /home/rexdraco/public_html/juego/application/bootstrap.php(122): Kohana_Core::modules(Array)
+#5 /home/rexdraco/public_html/juego/index.php(10 in /home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/swift_required.php on line 22
+[16-Nov-2013 19:07:15 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/classes/Swift.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/swiftmailer/classes/Swift-4.2.2/lib/swift_required.php on line 22
+[16-Nov-2013 19:15:46 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[16-Nov-2013 19:23:55 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[16-Nov-2013 19:23:58 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[16-Nov-2013 19:30:22 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Welcome.php on line 8
+[17-Nov-2013 12:56:55 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/classes/Kohana/Core.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/application/bootstrap.php on line 6
+[17-Nov-2013 12:57:34 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/classes/Kohana/Core.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/application/bootstrap.php on line 6
+[17-Nov-2013 13:05:47 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/system/classes/Kohana/Core.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/application/bootstrap.php on line 6
+[17-Nov-2013 12:10:03 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 12:14:06 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 12:15:17 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 12:15:43 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 12:54:02 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:35:43 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:39:15 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:45:41 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:53:50 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:53:53 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:55:21 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:56:14 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 13:57:03 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_MySQL' not found in /home/rexdraco/public_html/juego/application/classes/Model/test.php on line 2
+[17-Nov-2013 15:01:55 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/Mensajedia.php on line 2
+[17-Nov-2013 15:24:25 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 15
+[17-Nov-2013 15:24:35 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 15
+[17-Nov-2013 15:25:07 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 15
+[17-Nov-2013 15:25:18 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 15
+[17-Nov-2013 15:26:12 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:31:03 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:31:05 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:31:08 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:32:48 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:34:00 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:34:03 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:37:33 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:37:53 America/Chicago] PHP Fatal error:  Class 'TwitterOAuth' not found in /home/rexdraco/public_html/juego/application/classes/Twitterauth/Core.php on line 3
+[17-Nov-2013 15:38:49 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:39:13 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:39:16 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:39:18 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:40:59 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:41:11 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:41:32 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:49:02 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[17-Nov-2013 15:54:00 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 4
+[18-Nov-2013 18:15:29 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(/home/rexdraco/public_html/juego/application/vendor/twitteroauth/config.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php:5
+Stack trace:
+#0 /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php(5): Kohana_Core::error_handler(2, 'require_once(/h...', '/home/rexdraco/...', 5, Array)
+#1 /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php(5): require_once()
+#2 /home/rexdraco/public_html/juego/system/classes/Kohana/Core.php(511): require('/home/rexdraco/...')
+#3 [internal function]: Kohana_Core::auto_load('Controller_Mens...')
+#4 [internal function]: spl_autoload_call('Controller_Mens...')
+#5 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client/Internal.php(74): class_exists('Controller_Mens...')
+#6 /home/rexdraco/public_html/juego/system/ in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 5
+[18-Nov-2013 18:15:29 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/application/vendor/twitteroauth/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 5
+[18-Nov-2013 18:16:03 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(/home/rexdraco/public_html/juego/application/vendor/config.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php:5
+Stack trace:
+#0 /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php(5): Kohana_Core::error_handler(2, 'require_once(/h...', '/home/rexdraco/...', 5, Array)
+#1 /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php(5): require_once()
+#2 /home/rexdraco/public_html/juego/system/classes/Kohana/Core.php(511): require('/home/rexdraco/...')
+#3 [internal function]: Kohana_Core::auto_load('Controller_Mens...')
+#4 [internal function]: spl_autoload_call('Controller_Mens...')
+#5 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client/Internal.php(74): class_exists('Controller_Mens...')
+#6 /home/rexdraco/public_html/juego/system/classes/Kohan in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 5
+[18-Nov-2013 18:16:03 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/home/rexdraco/public_html/juego/application/vendor/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 5
+[18-Nov-2013 18:36:34 America/Chicago] PHP Fatal error:  Class 'TwitterAPIExchange' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 40
+[18-Nov-2013 20:31:54 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 51
+[18-Nov-2013 20:33:53 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 51
+[18-Nov-2013 20:33:56 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 51
+[18-Nov-2013 20:34:34 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 51
+[18-Nov-2013 20:34:54 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 51
+[18-Nov-2013 20:35:13 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Mensajedia.php on line 51
+[19-Nov-2013 19:46:52 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
+[19-Nov-2013 19:48:17 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
+[19-Nov-2013 19:48:24 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
+[19-Nov-2013 19:49:33 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
+[19-Nov-2013 19:50:04 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
+[19-Nov-2013 20:04:21 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
+[19-Nov-2013 20:19:42 America/Chicago] PHP Fatal error:  Class 'Kodwoo_View' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 8
+[19-Nov-2013 20:43:31 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:44:14 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:52:25 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:53:18 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(classes/kohana/kodwoo/view.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php:6
+Stack trace:
+#0 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php(6): Kohana_Core::error_handler(2, 'require(classes...', '/home/rexdraco/...', 6, Array)
+#1 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php(6): require()
+#2 /home/rexdraco/public_html/juego/modules/kodwoo/init.php(12): require('/home/rexdraco/...')
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Core.php(602): require_once('/home/rexdraco/...')
+#4 /home/rexdraco/public_html/juego/application/bootstrap.php(122): Kohana_Core::modules(Array)
+#5 /home/rexdraco/public_html/juego/index.php(102): require('/home/rexdraco/...')
+#6 {main}
+  thrown in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:53:18 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required 'classes/kohana/kodwoo/view.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:54:01 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(../kohana/kodwoo/view.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php:6
+Stack trace:
+#0 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php(6): Kohana_Core::error_handler(2, 'require(../koha...', '/home/rexdraco/...', 6, Array)
+#1 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php(6): require()
+#2 /home/rexdraco/public_html/juego/modules/kodwoo/init.php(12): require('/home/rexdraco/...')
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Core.php(602): require_once('/home/rexdraco/...')
+#4 /home/rexdraco/public_html/juego/application/bootstrap.php(122): Kohana_Core::modules(Array)
+#5 /home/rexdraco/public_html/juego/index.php(102): require('/home/rexdraco/...')
+#6 {main}
+  thrown in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:54:01 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '../kohana/kodwoo/view.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:55:14 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(../kohana/kodwoo/view.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php:6
+Stack trace:
+#0 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php(6): Kohana_Core::error_handler(2, 'require(../koha...', '/home/rexdraco/...', 6, Array)
+#1 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php(6): require()
+#2 /home/rexdraco/public_html/juego/modules/kodwoo/init.php(12): require('/home/rexdraco/...')
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Core.php(602): require_once('/home/rexdraco/...')
+#4 /home/rexdraco/public_html/juego/application/bootstrap.php(122): Kohana_Core::modules(Array)
+#5 /home/rexdraco/public_html/juego/index.php(102): require('/home/rexdraco/...')
+#6 {main}
+  thrown in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:55:14 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '../kohana/kodwoo/view.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 6
+[19-Nov-2013 20:57:44 America/Chicago] PHP Fatal error:  Cannot redeclare class Kohana_Kodwoo_View in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kohana/kodwoo/view.php on line 215
+[19-Nov-2013 20:59:16 America/Chicago] PHP Fatal error:  Cannot redeclare class Kodwoo_View in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[19-Nov-2013 21:08:10 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[19-Nov-2013 21:08:49 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 06:31:52 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 06:44:16 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 10:38:30 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 11:13:09 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 11:13:10 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 11:13:23 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 11:18:58 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_View' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/view.php on line 7
+[20-Nov-2013 18:08:51 America/Chicago] PHP Fatal error:  Class 'Kohana_Kodwoo_Internal_Template' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/internal/template.php on line 6
+[20-Nov-2013 18:11:48 America/Chicago] PHP Fatal error:  Class 'Dwoo_Template_File' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kohana/kodwoo/internal/template.php on line 7
+[20-Nov-2013 18:16:14 America/Chicago] PHP Fatal error:  Class 'Dwoo_Template_File' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kohana/kodwoo/internal/template.php on line 7
+[20-Nov-2013 18:16:17 America/Chicago] PHP Fatal error:  Class 'Dwoo_Template_File' not found in /home/rexdraco/public_html/juego/modules/kodwoo/classes/kohana/kodwoo/internal/template.php on line 7
+[20-Nov-2013 18:17:08 America/Chicago] PHP Fatal error:  Class 'Dwoo_Template_String' not found in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/File.php on line 18
+[20-Nov-2013 18:18:28 America/Chicago] PHP Fatal error:  Interface 'Dwoo_ITemplate' not found in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php on line 18
+[20-Nov-2013 18:19:50 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(../ITemplate.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php:17
+Stack trace:
+#0 /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php(17): Kohana_Core::error_handler(2, 'require_once(.....', '/home/rexdraco/...', 17, Array)
+#1 /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php(17): require_once()
+#2 /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/File.php(17): require_once('/home/rexdraco/...')
+#3 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kohana/kodwoo/internal/template.php(6): require_once('/home/rexdraco/...')
+#4 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/internal/template.php(6): require_once('/home/rexdraco/...')
+#5 /home/rexdraco/public_html/juego/mod in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php on line 17
+[20-Nov-2013 18:19:50 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '../ITemplate.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php on line 17
+[20-Nov-2013 18:20:23 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(../ITemplate.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory' in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php:17
+Stack trace:
+#0 /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php(17): Kohana_Core::error_handler(2, 'require_once(.....', '/home/rexdraco/...', 17, Array)
+#1 /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php(17): require_once()
+#2 /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/File.php(17): require_once('/home/rexdraco/...')
+#3 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kohana/kodwoo/internal/template.php(6): require_once('/home/rexdraco/...')
+#4 /home/rexdraco/public_html/juego/modules/kodwoo/classes/kodwoo/internal/template.php(6): require_once('/home/rexdraco/...')
+#5 /home/rexdraco/public_html/juego/mod in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php on line 17
+[20-Nov-2013 18:20:23 America/Chicago] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '../ITemplate.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php on line 17
+[20-Nov-2013 18:42:19 America/Chicago] PHP Fatal error:  Interface 'Dwoo_ITemplate' not found in /home/rexdraco/public_html/juego/modules/kodwoo/vendor/Dwoo/lib/Dwoo/Template/String.php on line 19
+[23-Nov-2013 15:06:21 America/Chicago] PHP Fatal error:  Class 'Model_Connect' not found in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 6
+[23-Nov-2013 15:06:47 America/Chicago] PHP Fatal error:  Class 'Kohana_Database_Mysql' not found in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 2
+[23-Nov-2013 15:07:17 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 7
+[23-Nov-2013 15:07:42 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getLogin() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 8
+[24-Nov-2013 18:15:42 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 13
+[24-Nov-2013 18:16:09 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 13
+[24-Nov-2013 18:29:13 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 19
+[24-Nov-2013 19:45:17 America/Chicago] PHP Fatal error:  Call to undefined method Request::redirect() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 22
+[25-Nov-2013 20:04:35 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:08:04 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:15:30 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:16:24 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:20:13 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:20:20 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:21:08 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:24:02 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:24:04 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[25-Nov-2013 20:28:07 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 7
+[26-Nov-2013 20:01:43 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::creator() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 30
+[26-Nov-2013 20:06:38 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::creator() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 30
+[26-Nov-2013 20:19:13 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::set() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 31
+[26-Nov-2013 20:19:14 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::set() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 31
+[26-Nov-2013 20:23:30 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 10
+[26-Nov-2013 20:29:30 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 10
+[26-Nov-2013 20:33:40 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 10
+[26-Nov-2013 20:33:47 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 10
+[26-Nov-2013 20:52:24 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 37
+[26-Nov-2013 20:52:55 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRazas() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 37
+[26-Nov-2013 20:54:57 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getProfesiones() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[26-Nov-2013 20:55:53 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getProfesiones() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 38
+[26-Nov-2013 20:57:10 America/Chicago] PHP Fatal error:  Cannot call constructor in /home/rexdraco/public_html/juego/application/classes/Model/Connect.php on line 10
+[26-Nov-2013 20:58:00 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::set() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 31
+[26-Nov-2013 20:58:10 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::set() in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 31
+[28-Nov-2013 20:42:12 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 39
+[01-Dec-2013 09:49:55 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 09:50:41 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 09:51:39 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 09:52:31 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 09:52:32 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:23:03 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:23:34 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:26:14 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:26:26 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:26:42 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:29:47 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:47:28 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 10:48:07 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 11:27:07 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 11:41:36 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 11:54:01 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 11:55:30 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 19:08:13 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[01-Dec-2013 19:09:51 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[04-Dec-2013 17:55:34 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[04-Dec-2013 18:07:42 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[04-Dec-2013 22:23:14 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[04-Dec-2013 22:37:01 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[05-Dec-2013 18:43:47 America/Chicago] PHP Fatal error:  Cannot use object of type Session_Native as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 61
+[05-Dec-2013 18:43:48 America/Chicago] PHP Fatal error:  Cannot use object of type Session_Native as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 61
+[06-Dec-2013 07:12:11 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 07:13:34 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 07:39:55 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 07:45:06 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 11:51:04 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 11:52:17 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 11:55:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 11:56:11 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 12:00:21 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 12:01:30 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 12:02:57 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 15:15:49 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 15:16:15 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 16:29:31 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[06-Dec-2013 16:29:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[07-Dec-2013 13:13:09 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 97
+[07-Dec-2013 13:13:16 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 97
+[07-Dec-2013 13:13:29 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 97
+[08-Dec-2013 23:27:15 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[16-Dec-2013 07:33:55 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[21-Dec-2013 15:12:05 America/Chicago] PHP Fatal error:  Call to undefined function Model_Connect() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 165
+[21-Dec-2013 15:12:11 America/Chicago] PHP Fatal error:  Call to undefined function Model_Connect() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 165
+[21-Dec-2013 15:13:23 America/Chicago] PHP Fatal error:  Call to undefined function Model_Connect() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 165
+[21-Dec-2013 17:54:31 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 197
+[21-Dec-2013 17:55:47 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 197
+[21-Dec-2013 17:56:19 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 197
+[21-Dec-2013 17:59:37 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 197
+[21-Dec-2013 18:26:20 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/index.html.d17.php on line 78
+[21-Dec-2013 18:27:09 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/index.html.d17.php on line 78
+[21-Dec-2013 18:33:22 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/index.html.d17.php on line 78
+[22-Dec-2013 05:44:18 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[22-Dec-2013 16:49:44 America/Chicago] PHP Fatal error:  Call to private method Controller_Juego::action_registroAgresiones() from context 'Kohana_Controller' in /home/rexdraco/public_html/juego/system/classes/Kohana/Controller.php on line 84
+[22-Dec-2013 16:49:50 America/Chicago] PHP Fatal error:  Call to private method Controller_Juego::action_registroAgresiones() from context 'Kohana_Controller' in /home/rexdraco/public_html/juego/system/classes/Kohana/Controller.php on line 84
+[27-Dec-2013 08:03:05 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[27-Dec-2013 08:03:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[27-Dec-2013 08:06:52 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[27-Dec-2013 14:09:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[27-Dec-2013 14:12:32 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 07:24:47 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:33:13 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:33:45 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:33:59 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:34:12 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:34:45 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:43:00 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:57:53 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 14:59:20 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 15:04:32 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 14
+[28-Dec-2013 15:06:38 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 15
+[28-Dec-2013 15:10:22 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 16
+[28-Dec-2013 15:12:07 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 16
+[06-Jan-2014 19:25:49 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 176
+[07-Jan-2014 20:22:30 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: resultado' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php:27
+Stack trace:
+#0 /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php(27): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/rexdraco/...', 27, Array)
+#1 /home/rexdraco/public_html/juego/system/classes/Kohana/Controller.php(84): Controller_Juego->action_newMensajeTaberna()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Juego))
+#4 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/rexdraco/public_html/juego/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 /home/rexdraco/public_html/juego/index.php(118): Kohana_Request->execute in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 27
+[07-Jan-2014 20:22:30 America/Chicago] PHP Fatal error:  Call to a member function newMensajeTaberna() on a non-object in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 27
+[07-Jan-2014 20:22:52 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: resultado' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php:27
+Stack trace:
+#0 /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php(27): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/rexdraco/...', 27, Array)
+#1 /home/rexdraco/public_html/juego/system/classes/Kohana/Controller.php(84): Controller_Juego->action_newMensajeTaberna()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Juego))
+#4 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/rexdraco/public_html/juego/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 /home/rexdraco/public_html/juego/index.php(118): Kohana_Request->execute in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 27
+[07-Jan-2014 20:22:52 America/Chicago] PHP Fatal error:  Call to a member function newMensajeTaberna() on a non-object in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 27
+[08-Jan-2014 20:31:13 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/tienda.html.d17.php on line 5
+[08-Jan-2014 20:31:18 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/tienda.html.d17.php on line 5
+[08-Jan-2014 20:31:51 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/tienda.html.d17.php on line 5
+[08-Jan-2014 20:31:54 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/tienda.html.d17.php on line 5
+[08-Jan-2014 20:32:05 America/Chicago] PHP Parse error:  syntax error, unexpected '>' in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/tienda.html.d17.php on line 5
+[09-Jan-2014 20:04:35 America/Chicago] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 103
+[11-Jan-2014 21:07:00 America/Chicago] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: model' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php:19
+Stack trace:
+#0 /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php(19): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/rexdraco/...', 19, Array)
+#1 /home/rexdraco/public_html/juego/system/classes/Kohana/Controller.php(84): Controller_Juego->action_comprarObjeto()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Juego))
+#4 /home/rexdraco/public_html/juego/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/rexdraco/public_html/juego/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 /home/rexdraco/public_html/juego/index.php(118): Kohana_Request->execute()
+#7 {m in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 19
+[11-Jan-2014 21:07:00 America/Chicago] PHP Fatal error:  Call to a member function tiendaVentaObjeto() on a non-object in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 19
+[17-Jan-2014 18:38:21 America/Chicago] PHP Fatal error:  Can't use method return value in write context in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/inventario.html.d17.php on line 5
+[17-Jan-2014 18:38:45 America/Chicago] PHP Fatal error:  Can't use method return value in write context in /home/rexdraco/public_html/juego/application/cache/kodwoo/render/home/rexdraco/public_html/juego/application/views/inventario.html.d17.php on line 5
+[17-Jan-2014 19:58:50 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRankingVivos() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 198
+[17-Jan-2014 20:00:22 America/Chicago] PHP Fatal error:  Call to undefined method Model_Connect::getRankingVivos() in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 198
+[19-Jan-2014 14:10:24 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 228
+[29-Jan-2014 20:32:06 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 39
+[29-Jan-2014 20:35:11 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 41
+[29-Jan-2014 20:35:45 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 42
+[01-May-2014 19:19:21 America/Chicago] PHP Parse error:  syntax error, unexpected T_RETURN in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 314
+[02-May-2014 21:14:07 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 211
+[02-May-2014 21:14:43 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 211
+[02-May-2014 21:14:56 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rexdraco/public_html/juego/application/classes/Controller/Connect.php on line 211
+[02-May-2014 22:10:28 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:10:41 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:11:11 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:11:11 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:14:11 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:14:20 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:15:49 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 287
+[02-May-2014 22:17:30 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 288
+[02-May-2014 22:17:39 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 288
+[02-May-2014 22:17:44 America/Chicago] PHP Parse error:  syntax error, unexpected T_IF in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 288
+[02-May-2014 22:50:31 America/Chicago] PHP Parse error:  syntax error, unexpected ':' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 350
+[03-May-2014 18:31:31 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 316
+[03-May-2014 18:31:45 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 316
+[03-May-2014 18:42:03 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 301
+[03-May-2014 18:42:13 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 301
+[03-Aug-2014 14:24:35 America/Chicago] PHP Fatal error:  Non-static method DateTime::getTimestamp() cannot be called statically, assuming $this from incompatible context in /home/rexdraco/public_html/juego/application/classes/Controller/Juego.php on line 10
