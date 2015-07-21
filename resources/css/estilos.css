@@ -1,0 +1,82 @@
+@import url('fuentes/fonts.css');
+
+
+html,body{background: white; margin:0px;font-size: 12px; font-family: tahoma;verdanna,arial; color: #660000}
+
+
+.divTitulo{border-bottom:6px solid #660000;background: #2361A1; padding: 10px}
+.divMenu{border-radius: 15px;-moz-border-radius: 15px;background: white; border: 1px solid #660000}
+.divMenu h5{text-indent:15px;  background: #B0C6DD; width: 100%; border-top-right-radius: 15px;-moz-border-top-right-radius: 15px;border-top-left-radius: 15px;-moz-border-top-left-radius: 15px;}
+.divMenu li{text-indent:10px;padding-top: 5px;}
+.divRecursos{border-radius: 15px;-moz-border-radius: 15px;background: white; border: 1px solid #660000}
+.divRecursos h5{text-indent:15px;  background: #B0C6DD; width: 100%; border-top-right-radius: 15px;-moz-border-top-right-radius: 15px;border-top-left-radius: 15px;-moz-border-top-left-radius: 15px;}
+.divRecursos li{text-indent:10px;padding-top: 5px;}
+.divDatosTorneo{color: black; background: #B0C6DD; padding-top: 6px;padding-left: 10px;border-top: 3px solid #660000}
+.divDatosJugador{}
+.divDatosJugador img{max-width: 80px}
+.divDatosJugador td{vertical-align: top;}
+.alignRigth{text-align: right;margin-right: 10px}
+.notificaciones{height: 200px;border: 1px solid black}
+.divNoticias{width: 220px; position: relative;}
+.divForos{width: 220px; position: relative;}
+.divEstado{border-radius: 15px;-moz-border-radius: 15px;background: white; border: 1px solid #660000}
+.divEstado h5{text-indent:15px;  background: #B0C6DD; width: 100%; border-top-right-radius: 15px;-moz-border-top-right-radius: 15px;border-top-left-radius: 15px;-moz-border-top-left-radius: 15px;}
+.divBloqueEstado{margin:5px;padding: 5px}
+.divBloques{min-height: 120px; height: 200px; overflow: hidden;}
+.colorAmarillo{background: #FFFF94}
+.divRoom{border-radius: 15px;-moz-border-radius: 15px;background: white; border: 1px solid #660000}
+.divRoom h5{text-indent:15px;  background: #B0C6DD; width: 100%; border-top-right-radius: 15px;-moz-border-top-right-radius: 15px;border-top-left-radius: 15px;-moz-border-top-left-radius: 15px;}
+.divRoom table{width: 100%;}
+.divRoom td{ padding-left: 5px;}
+ul, ol { margin-bottom: 10px; }
+li { line-height: 12px; margin-bottom: 5px; }
+.marginTop10{margin-top: 10px}
+.foot p{color: black; size: 10px; font-style: italic;}
+input#email{width: 100px;}
+input#password{width:100px;}
+
+.100per{width: 100% !important;}
+.50per{width: 50% !important;}
+
+.per100{width: 100% !important;}
+
+.naranja{color: #CC7A00}
+.rojo{color: red;}
+.center{text-align: center}
+.right{text-align: right}
+th{background:#B0C6DD; border-top: 1px solid black}
+
+div.imagen img{min-width: 120px; max-width: 250px;}
+
+#imagen{max-width: 220px !important; border: 3px solid #B0C6DD; background: #B0C6DD;text-align: center}
+#imagenPortada{max-width: 180px !important;border: 3px solid #B0C6DD; background: #B0C6DD;padding: 7px;}
+#imagenroom{max-width: 440px !important; border: 3px solid #B0C6DD; background: #B0C6DD;text-align: center}
+
+.floatLeft{float: left; position: relative}
+
+.blockNone{display: -webkit-inline-box !important;}
+
+tr.trImpar{background: #C0D1E4}
+
+.anuncios{padding-left: 10px;padding-right: 10px; }
+
+.taberna{
+    display: -webkit-inline-box !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:1px solid #999999;
+    width:100%;
+    min-height: 150px;
+    height: 250px;
+    overflow: scroll;
+    margin:5px 0;
+    padding:3px;
+}
+
+.taberna li{padding-bottom: 3px; padding-top: 3px}
+
+.bold{font-weight: bold}
+
+.descripcionHabitacion {height: 250px; padding-top: 10px; border: 3px solid #B0C6DD;}
+.descripcionHabitacion p{margin-left: 5px;margin-right: 5px}

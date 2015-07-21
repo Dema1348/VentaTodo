@@ -1,0 +1,140 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+
+  font-family: "Open Sans",sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.home{
+  background: url(/framework/resources/img/blur/4.jpg) no-repeat center center fixed;
+}
+
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.text-muted span{
+  color: black;
+}
+#login{
+  width: 480px;
+  margin: 10% auto 0;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+  
+}
+
+#login .Registro {
+  margin: 0;
+  font-size: 13px;
+
+}
+
+#login h1 {
+  text-align: center;
+  font-weight: 700;
+  margin: 5px 0 15px;
+}
+
+
+#login h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+#login .Registro span {
+  cursor: pointer;
+  color: #3871A1;
+}
+
+#login .Registro span:hover {
+  color: #2A6496;
+  text-decoration: underline;
+}
+
+#login .login span {
+  cursor: pointer;
+  color: #3871A1;
+}
+
+#login .login span:hover {
+  color: #2A6496;
+  text-decoration: underline;
+}
+
+#login .submitWrap {
+  text-align: right;
+}
+
+#mensaje{
+  margin: 15px 0;
+  text-align: justify;
+
+}
+#mensaje2{
+  margin: 15px 0;
+  text-align: justify;
+ 
+}
+
+.navbar-fixed-top{
+  padding: 10px 0;
+
+
+}
+
+.ancho{
+  width: 100%;
+}
+
+
+table.tablesorter thead tr .header {
+  background-image: url(../img/bg.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+table.tablesorter tbody td {
+  color: #3D3D3D;
+  padding: 4px;
+  background-color: #FFF;
+  vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+  background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+  background-image: url(../img/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+  background-image: url(../img/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
