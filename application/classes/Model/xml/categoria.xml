@@ -1,0 +1,33 @@
+<class id="categoria" name="categoria">
+
+				<listaCategorias value="
+						SELECT * FROM tipo order by codigo_tipo 
+				" />
+
+				<listarCategoria value="
+						SELECT * FROM tipo where codigo_tipo= '@@id@@'
+				" />
+				
+			<validarCategoria value="
+						select * from tipo where codigo_tipo = '@@codigo@@'
+					"
+				/>
+
+				<updateCategoria value=" UPDATE tipo SET nombre_tipo ='@@nombre@@' Where codigo_tipo = '@@codigo@@'"/>
+					
+
+				
+				
+
+				
+				<delete value="delete from tipo where codigo_tipo='@@id@@'"/>
+
+
+			
+
+
+				<newCategoria value=" INSERT INTO tipo  VALUES ( '' , '@@nombre@@')"/>
+
+				
+	
+</class>

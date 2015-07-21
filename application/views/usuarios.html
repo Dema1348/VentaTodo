@@ -1,0 +1,59 @@
+{include cabecera.html}
+<body>
+	<div class="container">
+		 {include menu.html}
+
+		<div class="panel  panel-primary">
+			<div class="panel-heading">Usuarios</div>
+			<div class="panel-body">
+				<p>Estos son los usuarios registrados en el sistema.</p>
+			</div>
+
+
+			<table class="table">
+				<thead>
+		          <tr>
+		            <th>#</th>
+		            <th>User</th>
+		            <th>Password</th>
+		            <th>Nombre</th>
+		            <th>Id unidad</th>
+		            <th>Estado</th>
+		            <th>Fecha ingreso</th>
+		            <th>Editar</th>
+		            <th>Borrar</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		        	{$cont=1}
+		        	{foreach $datos row}
+		        		<tr>
+		        			<th>{$cont++}</th>
+				            <th>{$row['User']}</th>
+				            <th>{$row['Password']}</th>
+				            <th>{$row['Nombre']}</th>
+				            <th>{$row['Id_unidad']}</th>
+				            {if $row['Estado'] == 1 }
+				            <th><button type="button" class="btn btn-warning" key="{$row['User']}">Activo</button></th>
+				            {else}
+				             <th><button type="button" class="btn btn-warning" key="{$row['User']}">Inactivo</button></th>
+				            {/if}
+				            <th>{$row['Fecha_ingreso']}</th>
+							<th><button type="button" class="btn btn-success" key="{$row['User']}">Editar</button></th>		
+				            <th><button type="button" class="btn btn-danger" key="{$row['User']}">Eliminar</button></th>
+		        		</tr>
+		        	{else}
+		        		<tr>
+		        			Sin usuarios
+		        		</tr>	
+		        	{/foreach}
+		        </tbody>
+			</table>
+		</div>
+
+
+		 <footer class="footer">
+			<p>Desarrollado para la evuluacion 3</p>
+		</footer>
+	</div>
+</body>

@@ -1,0 +1,27 @@
+<class id="cliente" name="cliente">
+
+				<listaCliente value="
+						select * from cliente
+				" />
+
+				<changeEstado value="
+						UPDATE cliente SET Estado = '@@estado@@' WHERE Id_cliente = '@@key@@'
+					"
+				/>
+
+				<newCliente value=" INSERT INTO cliente  VALUES ( '@@id_cliente@@' , '@@rut@@' , '@@razon_social@@' , '@@direccion@@', '@@comuna@@', '@@email@@' , '@@telefono@@' ,'@@estado@@'  )"/>
+
+				<validarCliente value="
+						select * from cliente where Id_cliente = '@@id_cliente@@'
+					"
+				/>
+				
+				<editCliente value="
+						select * from cliente WHERE Id_cliente = '@@id_cliente@@'
+					"
+				/>
+
+		
+
+				<updateCliente value="UPDATE cliente  SET  Rut = '@@rut@@' , Razon_social ='@@razon_social@@' , Direccion = '@@direccion@@', Comuna = '@@comuna@@', Email='@@email@@' , Telefono='@@telefono@@', Estado ='@@estado@@' WHERE Id_cliente = '@@id_cliente@@' "/>
+</class>

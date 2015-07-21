@@ -1,0 +1,12 @@
+<class id="administrador" name="administrador">
+
+				<validarAdmin value="
+						select * from administrador
+						where 
+							id = '@@usuario@@'
+							and password = '@@password@@'
+				" />
+				
+				
+
+</class>

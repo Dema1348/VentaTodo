@@ -1,0 +1,161 @@
+
+{include ../cabecera.html}
+<body >
+	{include ../menu.html}
+	<div class="container">
+	<div class="page-header">
+       	 	<h1>Usuarios</h1>
+     </div>
+		<div class="panel  panel-primary">
+			<div class="panel-heading">Usuarios registrados en el sistema</div>
+			<div class="table-responsive">
+			<table class="table table-striped tablesorter" id="tablaG">
+				<thead>
+		          <tr>
+		            <th>Rut</th>
+		            <th>Username</th>
+		            <th>Nombre</th>
+		            <th>Apellido</th>
+		            <th>Correo</th>
+		            <th>Fecha Nacimiento</th>
+		            <th>Tipo de Perfil</th>
+		            <?php 
+                    $deputy = $_SESSION['deputy'];
+                    $estado= ($deputy->allowed('Usuario/editClave'));
+                    if($estado){
+                   ?> 
+		            <th>Contraseña</th>
+		            <?php
+                    }
+                    ?> 
+
+		            <?php 
+                    $deputy = $_SESSION['deputy'];
+                    $estado= ($deputy->allowed('Usuario/edit'));
+                    if($estado){
+                   ?> 
+		            <th>Editar</th>
+		            <?php
+                    }
+                    ?> 
+		            <?php 
+                    $deputy = $_SESSION['deputy'];
+                    $estado= ($deputy->allowed('Usuario/delete'));
+                    if($estado){
+                   ?> 
+		           	<th>Eliminar</th>
+		           	 <?php
+                    }
+                    ?> 
+		          </tr>
+		        </thead>
+		        <tbody>
+		        	{foreach $datos row}
+		        		<tr>
+		        			<td>{$row['id']}</td>
+				            <td>{$row['login']}</td>
+				            <td>{$row['nombre']}</td>
+				            <td>{$row['apellido']}</td>
+				            <td>{$row['correo']}</td>
+				            <td>{date("d-m-Y", strtotime($row["fecha"]))}</td>
+				            <td>{$row['perfil']}</td>
+				            <?php 
+		                    $deputy = $_SESSION['deputy'];
+		                    $estado= ($deputy->allowed('Usuario/editClave'));
+		                    if($estado){
+		                   ?> 
+				            <td><a role="button" type="button" class="btn btn-warning" key="{$row['id']}" href='http://localhost/framework/index.php/Usuario/editClave?id={$row['id']}' >Cambiar</a></td>
+				             <?php
+		                    }
+		                    ?> 
+
+				            <?php 
+		                    $deputy = $_SESSION['deputy'];
+		                    $estado= ($deputy->allowed('Usuario/edit'));
+		                    if($estado){
+		                   ?> 
+				            <td><a role="button" type="button" class="btn btn-success" key="{$row['id']}" href='http://localhost/framework/index.php/Usuario/edit?id={$row['id']}' >Editar</a></td>
+				              <?php
+		                    }
+		                    ?> 
+				            <?php 
+		                    $deputy = $_SESSION['deputy'];
+		                    $estado= ($deputy->allowed('Usuario/delete'));
+		                    if($estado){
+		                   ?> 
+				            <td><button type="submit" class="btn btn-danger eliminar" key="{$row['id']}"  data-target="#popupEliminarUsuario">Eliminar</button></td>
+				              <?php
+		                    }
+		                    ?> 
+		        		</tr>
+		        	{else}
+		        		<tr>
+		        			Sin usuarios
+		        		</tr>	
+		        	{/foreach}
+		        </tbody>
+			</table>
+			</div>
+		</div>
+	
+	</div>
+	{include ../footer.html}
+	<!-- popup usuarios -->
+	<div class="modal fade" id="popupEliminarUsuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+		<div class="modal-dialog"> 
+			<div class="modal-content"> 
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
+					</button> 
+					<h4 class="modal-title">Estado de eliminacion</h4> 
+				</div> 
+				<div  class="modal-body"> 
+					<h3 id="estado"></h3> 
+				</div> 
+				<div class="modal-footer">
+			<button type="button" class="btn btn-info" data-dismiss="modal">Seguir viendo los usuarios</button> 
+				 <a href="http://localhost/framework/index.php/Usuario/" role="button" class="btn btn-success">Actualizar la pagina</a>
+				</div>
+			</div> 
+			
+		</div>
+	</div>	
+	<script type="text/javascript">
+		$("#tablaG").tablesorter({ 
+        
+        	headers: { 
+           
+            7: { 
+                sorter: false 
+            }, 
+            8: { 
+                sorter: false 
+            }, 
+            9: { 
+                sorter: false 
+            }
+        } 
+   	 });
+
+		$(".eliminar").click(function(event) {
+			event.preventDefault();
+			fila= $(this).parent().parent();
+			$.post("http://localhost/framework/index.php/Usuario/delete",
+			{
+				id : $(this).attr('key')
+			}
+			,function(data) {
+				if(data=="ok"){
+					$("#estado").text("El usuario fue eliminado con exito.");
+					fila.remove();
+					$('#popupEliminarUsuario').modal('show');
+				}
+				else{
+					$("#estado").text("El usuario no pudo ser eliminado puesto que tiene ventas asociadas a él");
+					$('#popupEliminarUsuario').modal('show');
+				}
+			});
+		});
+	</script>
+</body>

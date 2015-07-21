@@ -1,0 +1,25 @@
+<class id="venta" name="venta">
+
+				
+
+				<newVenta value=" INSERT INTO venta  VALUES ( '@@maximo@@' , '@@vendedor@@' , '@@fecha@@' , '@@total@@')
+					"/>
+
+				<lastVenta value=" SELECT IFNULL(max(codigo_venta),'null') as maximo FROM venta
+					"/>
+
+				<findVenta value=" SELECT * from ventafull where codigo_venta= '@@ultimaVenta@@'
+					"/>
+
+				<listaVentas value=" SELECT * from ventafull  order by codigo_venta
+					"/>	
+
+				<sinVenta value="
+				select * from venta  where codigo_vendedor = '@@id@@'
+				" />
+
+				<delete value="
+						DELETE FROM venta WHERE codigo_venta = '@@id@@'
+				" />
+		
+</class>

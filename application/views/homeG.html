@@ -1,0 +1,28 @@
+{include cabecera.html}
+<body >
+	{include menu.html}
+	<div class="container">
+    	<div class="page-header">
+       	 	<h1>Sistema de administración "VendoTodo"</h1>
+        </div>
+        <p class="lead">
+        	Bienvenido  {$nombre} {$apellido}.
+        </p>
+        <p class="lead">
+        	Fecha actual del  sistema {date("j F, Y")}.
+        </p>
+         <p class="lead">
+        	Hora actual del  sistema {date("g:i a")}.
+        </p>
+         <p class="lead">
+        	Nombre de usuario: {$usuario}.
+        </p>
+         <p class="lead">
+        	Tipo de perfil actual: {$perfil}.
+        </p>
+	</div>
+	{include footer.html}
+</body>
+
+
+

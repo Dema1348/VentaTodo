@@ -1,0 +1,19 @@
+<class id="detalle" name="detalle">
+
+				<newDetalle value="
+						INSERT INTO detalle_venta  VALUES ('','@@ultimaVenta@@' , '@@cantidad@@' , '@@subtotal@@' , '@@codigo@@' )
+				" />
+			
+				<findDetalle value="
+						select * from detallefull where codigo_venta='@@ultimaVenta@@'
+				" />
+
+				<sinDetalle value="
+						select * from detallefull  where codigo_producto = '@@id@@'
+				" />
+
+				<delete value="
+						DELETE FROM detalle_venta WHERE codigo_venta = '@@id@@'
+				" />
+			
+</class>

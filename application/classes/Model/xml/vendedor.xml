@@ -1,0 +1,11 @@
+<class id="vendedor" name="vendedor">
+
+				
+
+				<validarVendedor value="
+						select * from vendedor where Codigo_vendedor = '@@codigo_vendedor@@'
+					"
+				/>
+
+		
+</class>

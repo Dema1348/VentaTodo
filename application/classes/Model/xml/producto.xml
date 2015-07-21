@@ -1,0 +1,35 @@
+<class id="producto" name="producto">
+
+				<listaProductos value="
+						SELECT * FROM productoFull order by codigo_producto 
+				" />
+
+				<listarProducto value="
+						SELECT * FROM productoFull where codigo_producto= '@@id@@'
+				" />
+				
+				<tipos  value="
+					select * from tipo
+					"/>
+
+				<validarProducto value="
+						select * from producto where codigo_producto = '@@codigo@@'
+					"
+				/>
+
+				<delete value="delete from producto where codigo_producto='@@id@@'"/>
+
+
+				<updateProducto value=" UPDATE producto SET nombre_producto ='@@nombre@@' , codigo_tipo = '@@tipo@@' , precio_producto = '@@precio@@' Where codigo_producto = '@@codigo@@'"/>
+
+
+				<newProducto value=" INSERT INTO producto  VALUES ( '' , '@@nombre@@' , '@@tipo@@' , '@@precio@@')"/>
+
+
+				<sinProducto value="
+						select * from productofull  where codigo_tipo = '@@id@@'
+				" />
+
+				
+	
+</class>

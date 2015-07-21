@@ -1,0 +1,45 @@
+<class id="usuario" name="usuario" >
+
+				<listarVendedores value="
+						select * from usuario where codigo_perfil = 3
+				" /> 
+
+				<listarUsuarios value="
+						select u.id_usuario id, u.login_usuario login, u.nombre_usuario nombre, u.apellido_usuario apellido, 
+						u.correo_usuario correo, u.fechaNacimiento_usuario fecha, p.nombre_perfil perfil
+						 from usuario u INNER JOIN perfil p ON u.codigo_perfil = p.codigo_perfil
+				" /> 
+
+				<validarUserPass value="
+						select * from usuario where login_usuario = '@@usuario@@' and pass_usuario = '@@password@@'
+					"
+				/>
+
+				<validarUser value="
+						select * from usuario where login_usuario = '@@newUsuario@@'
+					"
+				/>
+
+				<delete value="delete from usuario where id_usuario='@@id@@'"/>
+
+				<validar value="
+						select * from usuario where id_usuario = '@@id@@'
+					"
+				/>
+				<listarUsuario value="
+						select * from usuariofull WHERE id_usuario = '@@id@@'
+					"
+				/> 
+				
+				<newUser value=" INSERT INTO usuario  VALUES ('@@newRut@@', '@@newUsuario@@' , '@@newPassword@@' , '@@newNombre@@' , '@@newApellido@@', '@@newEmail@@', '@@newTipo@@' ,'@@newfecha@@' )"/>
+
+			 	<updateUser value="UPDATE usuario  SET nombre_usuario ='@@nombre@@' , apellido_usuario = '@@apellido@@', codigo_perfil = '@@perfil@@', fechaNacimiento_usuario='@@fecha@@', correo_usuario='@@correo@@'  WHERE id_usuario = '@@id@@' and  login_usuario = '@@usuario@@'  "/>
+
+			 	<updateUsuarioC value="
+						UPDATE usuario  SET pass_usuario ='@@password@@' WHERE id_usuario = '@@id@@' and  login_usuario = '@@usuario@@'  
+					"
+				/> 
+			 
+
+				
+</class>

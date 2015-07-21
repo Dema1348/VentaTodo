@@ -1,0 +1,213 @@
+{include ../cabecera.html}
+
+<body >
+	{include ../menu.html}
+	<div class="container">
+	<div class="page-header">
+       	 	<h1>Productos más vendidos por categoria</h1>
+     </div>
+		<form role="form" method="post" action="http://localhost/framework/index.php/Categoria/new" id="form" >
+		
+			<div class="form-group">
+				<label for="categoria">Categoria</label>
+				<div class="input-group ancho ">		
+				<select class="form-control has-feedback" id="tipo">
+				{foreach $datos row}
+				<option value='{$row["codigo_tipo"]}'> {$row["nombre_tipo"]} </option>
+				{/foreach}
+				</select>
+				</div>
+			</div>
+			
+			
+			<button type="submit" class="btn btn-primary" id="mostrar"  data-target="#popupMasVendidos">Mostrar</button>
+		</form>
+	
+	</div>
+
+	<div id="chartContainer" style="height: 450px; width: 45%;  display: inline-block"></div>	
+	<div id="chartContainer2" style="height: 450px; width: 45%; display: inline-block"></div>	
+	<br>
+	<br>
+	{include ../footer.html}
+	<!-- popup productos -->
+	<div class="modal fade" id="popupMasVendidos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+		<div class="modal-dialog modal-lg"> 
+			<div class="modal-content"> 
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
+					</button> 
+					<h4 class="modal-title">Creacion completada</h4> 
+				</div> 
+				<div  class="modal-body"> 
+					<div class="table-responsive">
+						<table class="table table-striped tablesorter " id="tablaG">
+							<thead>
+					          <tr>
+					            <th>Codigo producto</th>
+					            <th>Nombre producto</th>
+					            <th>Cantidad de ventas</th>
+					            <th>Precio actual del producto</th>
+					            <th>Total de ventas</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					        	
+					        </tbody>
+						</table>
+					</div> 
+					<div class='text-right'> 
+						<div >
+						<h3>Total: <span class="label label-primary" id="total">0</span></h3>
+						</div> 
+					</div> 
+					
+				</div> 
+				<div class="modal-footer">
+				 <button type="button" class="btn btn-info" data-dismiss="modal" >Seguir viendo productos mas vendidos</button> 
+				 <a href="http://localhost/framework/index.php/Venta/" role="button" class="btn btn-success">Volver ventas</a>
+				</div>
+			</div> 
+			
+		</div>
+	</div>	
+
+	<script>
+		$(function  () {
+			$("table").tablesorter();
+			
+			
+
+			$('#mostrar').click(function(event) {
+				event.preventDefault();
+				$("#tablaG").find("tr:gt(0)").remove();
+				
+
+				$.post("http://localhost/framework/index.php/Consulta/vendidos",
+					{
+						id: $('select#tipo option:selected').val()
+					},
+					function(data) {
+					   var types = JSON.parse(data);			
+					  
+					  for (var i = 0; i < types.length; i++) {
+						  var fila = "<tr>";	
+						  fila = fila+"<td>"+types[i].codigo_producto+"</td>";
+						  fila = fila+"<td>"+types[i].nombre_producto+"</td>";
+						  fila = fila+"<td>"+types[i].cantidad+"</td>";
+						  fila = fila+"<td>$"+$.number(types[i].precio_producto)+"</td>";
+						  fila = fila+"<td class='subtotal'>$"+$.number(types[i].total)+"</td>";
+						  fila = fila+"</tr>";
+						 
+						   $("table tbody").append(fila);
+							$("table").trigger("update"); 
+
+					  };
+					   
+					 
+	
+
+					  $('#popupMasVendidos').modal('show').sum();
+						
+						
+					
+
+					});
+
+
+			});
+
+			$.fn.sum = function() {
+				sum=0;
+					$('.subtotal').each(function() { 
+						numero = $(this).text().replace('$','');  
+						numero=numero.replace('.','');
+						numero=numero.replace('.','');
+						numero=numero.replace(',','');
+						numero=numero.replace(',','');
+						sum += parseInt(numero);
+						
+	           		                    
+	   				});
+					$('#total').html("$"+$.number(sum));
+			};
+
+
+	});
+    </script>
+    <script type="text/javascript">
+	window.onload = function () {
+		var chart1 = new CanvasJS.Chart("chartContainer",
+		{
+			title:{
+				text: "Ventas por Categoria"
+			},
+                        animationEnabled: true,
+			theme: "theme1",
+			data: [
+			{        
+				type: "doughnut",
+				indexLabelFontFamily: "Garamond",       
+				indexLabelFontSize: 20,
+				startAngle:60,
+				showInLegend: true,
+				indexLabelFontColor: "dimgrey",       
+				indexLabelLineColor: "darkgrey", 
+				toolTipContent: "<strong>#percent% </strong>" , 					
+
+				dataPoints: [
+				
+				{foreach $grafico row}
+					{  y: {intval($row['cantidad']*100/$suma)}, label: "{$row['nombre_tipo']} {intval($row['cantidad']*100/$suma)}%" , legendText :" {$row['nombre_tipo']}" },
+
+				
+				{/foreach}
+				
+				
+
+				]
+			}
+			]
+		});
+
+		chart1.render();
+
+		var chart2 = new CanvasJS.Chart("chartContainer2",
+		{
+			title:{
+				text: "Ventas por Ingresos"
+			},
+                        animationEnabled: true,
+			theme: "theme1",
+			data: [
+			{        
+				type: "doughnut",
+				indexLabelFontFamily: "Garamond",       
+				indexLabelFontSize: 20,
+				startAngle:60,
+				showInLegend: true,
+				indexLabelFontColor: "dimgrey",       
+				indexLabelLineColor: "darkgrey", 
+				toolTipContent: "<strong>#percent% </strong>" , 					
+
+				dataPoints: [
+				
+				{foreach $grafico row}
+					{  y: {intval($row['suma']*100/$suma)}, label: "{$row['nombre_tipo']} {intval($row['suma']*100/$suma2)}%" , legendText :" {$row['nombre_tipo']}" },
+
+				
+				{/foreach}
+				
+				
+
+				]
+			}
+			]
+		});
+
+		chart2.render();
+	}
+	</script>
+	
+</body>

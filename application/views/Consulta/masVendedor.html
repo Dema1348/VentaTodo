@@ -1,0 +1,159 @@
+{include ../cabecera.html}
+<body >
+	{include ../menu.html}
+	<div class="container">
+	<div class="page-header">
+       	 	<h1>Vendedores con mayor numero de venta</h1>
+     </div>
+			<div class="panel  panel-primary">
+				<div class="panel-heading">Ventas</div>
+				<div class="panel-body">
+					<p>Estos son ventas de cada vendedor activo en el sistema.</p>
+				</div>
+
+				<div class="table-responsive">
+					<table class="table table-striped tablesorter " id="tablaG">
+							<thead>
+					          <tr>
+					        <th>N° </th>  	
+				          	<th>Rut </th>
+				            <th>Username</th>
+				            <th>Nombre</th>
+				            <th>Correo</th>
+				            <th>N° Ventas</th>
+				            <th>Ingresos</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				        	{$i=1}
+				        	{foreach $datos row}
+				        		<tr>
+				        			<td>#{$i++}</td>
+				        			<td>{$row['id_usuario']}</td>
+				        			<td>{$row['login_usuario']}</td>
+						            <td>{$row['nombre_usuario']} {$row['apellido_usuario']}</td>
+						            <td>{$row['correo_usuario']}</td>
+						            <td>{$row['ventas']}</td>
+						            <td>${number_format(intval($row['total']))}</td>
+				        	{else}
+				        		<tr>
+				        			No se han registrado ventas
+				        		</tr>	
+				        	{/foreach}
+				        </tbody>
+					</table>
+				</div>
+				
+			</div>
+				<div class='text-right'> 	
+					<h3>N° de ventas <span class="label label-primary">{$suma}</span></h3>
+					<h3>Ingresos en ventas <span class="label label-primary">${number_format(intval($total))}</span></h3> 
+					
+				</div> 
+					
+			
+		</div>
+	<div id="chartContainer" style="height: 450px; width: 45%;  display: inline-block"></div>	
+	<div id="chartContainer2" style="height: 450px; width: 45%; display: inline-block"></div>	
+	<br>
+	<br>
+	{include ../footer.html}
+	
+	<script type="text/javascript">
+		$(function() {
+			
+			$("#tablaG").tablesorter({ 
+        
+        	headers: { 
+            1: { 
+                sorter: false 
+            }, 
+            2: { 
+                sorter: false 
+            }, 
+            3: { 
+                sorter: false 
+            } , 
+            4: { 
+                sorter: false 
+            } 
+        } 
+    	});
+	});
+	</script>
+	 <script type="text/javascript">
+	window.onload = function () {
+		var chart1 = new CanvasJS.Chart("chartContainer",
+		{
+			title:{
+				text: "Cantidad de Ventas por vendedor"
+			},
+                        animationEnabled: true,
+			theme: "theme1",
+			data: [
+			{        
+				type: "doughnut",
+				indexLabelFontFamily: "Garamond",       
+				indexLabelFontSize: 20,
+				startAngle:60,
+				showInLegend: true,
+				indexLabelFontColor: "dimgrey",       
+				indexLabelLineColor: "darkgrey", 
+				toolTipContent: "<strong>#percent% </strong>" , 					
+
+				dataPoints: [
+				
+				{foreach $datos row}
+					{  y: {intval($row['ventas']*100/$suma)}, label: "{$row['nombre_usuario']} {$row['apellido_usuario']} {intval($row['ventas']*100/$suma)}%" , legendText :" {$row['nombre_usuario']} {$row['apellido_usuario']}" },
+
+				
+				{/foreach}
+				
+				
+
+				]
+			}
+			]
+		});
+
+		chart1.render();
+
+		var chart2 = new CanvasJS.Chart("chartContainer2",
+		{
+			title:{
+				text: "Ingresos de Ventas por vendedor"
+			},
+                        animationEnabled: true,
+			theme: "theme1",
+			data: [
+			{        
+				type: "doughnut",
+				indexLabelFontFamily: "Garamond",       
+				indexLabelFontSize: 20,
+				startAngle:60,
+				showInLegend: true,
+				indexLabelFontColor: "dimgrey",       
+				indexLabelLineColor: "darkgrey", 
+				toolTipContent: "<strong>#percent% </strong>" , 					
+
+				dataPoints: [
+				
+				{foreach $datos row}
+					{  y: {intval($row['total']*100/$total)}, label: "{$row['nombre_usuario']} {$row['apellido_usuario']} {intval($row['total']*100/$total)}%" , legendText :" {$row['nombre_usuario']} {$row['apellido_usuario']}" },
+
+				
+				{/foreach}
+				
+				
+
+				]
+			}
+			]
+		});
+
+		chart2.render();
+
+		
+	}
+	</script>
+</body>

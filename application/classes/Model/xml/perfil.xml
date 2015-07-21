@@ -1,0 +1,8 @@
+<class id="perfil" name="perfil">
+
+				<tipos value="
+						select * from perfil
+				" />
+			
+			
+</class>

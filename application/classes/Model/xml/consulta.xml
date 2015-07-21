@@ -1,0 +1,11 @@
+<class id="consulta" name="consulta">
+
+	<listarVentasTipo value="SELECT codigo_producto , nombre_producto, count(codigo_producto) as cantidad, precio_producto, sum(total) as total  FROM detallefull WHERE codigo_tipo = '@@id@@' group by codigo_producto order by cantidad desc
+		"/>
+
+	<grafico value="SELECT (count(nombre_tipo)*cantidad) as cantidad , sum(total) as suma ,nombre_tipo FROM detallefull group by nombre_tipo"
+		/>
+		
+	<masVendedor value="select u.id_usuario, u.login_usuario,u.nombre_usuario, u.apellido_usuario, u.correo_usuario , u.fechaNacimiento_usuario as fecha_nacimiento, count(v.codigo_vendedor) as ventas , IFNULL(sum(v.total_venta),0) as total , u.codigo_perfil from usuario u left join venta v on u.id_usuario= v.codigo_vendedor where (u.codigo_perfil=3) group by u.id_usuario order by ventas desc"/>
+	
+</class>
